@@ -7,7 +7,6 @@ bai1.addEventListener('click',function(){
         let arr = input.split('-')
         let day,month,year
         let check = true
-        console.log(arr)
         if(+arr[1] > 0 && +arr[1] <= 12 && +arr[2] > 0){
             month = +arr[1]
             year = +arr[2]
@@ -94,8 +93,6 @@ document.getElementById('bai3').addEventListener('click',function(){
             last = input  % 10
             arr.unshift(last)
             input = Math.floor(input / 10)
-            console.log(last)
-            console.log(input)
         }
 
         let newArr = arr.map(function(e){
@@ -127,7 +124,6 @@ document.getElementById('bai3').addEventListener('click',function(){
                 return 'chín'
             }
         })
-        console.log(newArr)
         document.getElementById("result3").innerText = `Cách đọc của só đó là: ${newArr[0]} trăm ${newArr[1]} mươi ${newArr[2]}`
     }
     else{
@@ -176,8 +172,6 @@ bai4.addEventListener('click',function(){
         let f = +new3[1]
         kc3 = Math.sqrt(Math.pow((19-e),2)+Math.pow((90-f),2))
     }
-    console.log(toaDo1,toaDo2,toaDo3)
-    console.log(kc1,kc2,kc3)
     let max= kc1;
     if(kc2 > kc1 ){
         max = kc2
@@ -209,11 +203,6 @@ bai4.addEventListener('click',function(){
         document.getElementById('result4').innerText = `Khoảng cách của  học sinh thứ ba và học sinh thứ nhất là bằng nhau và xa nhất`
     }
     }
-    
-
-    
-    
-    
 })
 
 
